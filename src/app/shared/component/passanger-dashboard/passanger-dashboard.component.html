@@ -1,0 +1,10 @@
+<app-passanger-count></app-passanger-count>
+
+<ul class="list-group mb-4">
+    <li  style="list-style-type:square" class="list-group-item" *ngFor="let pass of passangerArray">
+      {{pass.fullname}}
+    </li>
+</ul>
+
+<app-passanger-card [passObj]="pass" *ngFor="let pass of passangerArray"></app-passanger-card>
+
